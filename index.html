@@ -74,13 +74,13 @@
 </head>
 <body>
 <header class="top"><div class="top__in">
-  <a class="top__brand" href="../index.html">Tanay Pratap Singh<span>/ live</span></a>
+  <a class="top__brand" href="https://tanaypratapsingh.github.io/">Tanay Pratap Singh<span>/ live</span></a>
   <nav aria-label="Dashboards">
-    <a href="index.html">Overview</a>
-    <a href="wiki.html">Edit stream</a>
-    <a href="book.html">Order book</a>
-    <a href="quakes.html">Earthquakes</a>
-    <a href="sun.html" aria-current="page">Space weather</a>
+    <a href="https://tanaypratapsingh.github.io/live/">Overview</a>
+    <a href="https://tanaypratapsingh.github.io/live/wiki.html">Edit stream</a>
+    <a href="https://tanaypratapsingh.github.io/live/book.html">Order book</a>
+    <a href="https://tanaypratapsingh.github.io/live/quakes.html">Earthquakes</a>
+    <a href="./" aria-current="page">Space weather</a>
   </nav>
   <button class="top__theme" type="button">Dark theme</button>
 </div></header>
@@ -302,11 +302,11 @@ r(th) = r0 (2 / (1 + cos th))^alpha</div>
         <p>Each feed has two clocks. The poll clock (header) says whether the last fetch succeeded. The sample clock (freshness card) is the age of the newest time stamp inside the file, judged against a per feed threshold: 1 minute products are fresh within 10 minutes and late within 30, the hourly ephemeris within 4 and 12 hours, the final 3 hour Kp within 4 and 7 hours of its window's end, OVATION within 20 and 60 minutes of its observation time, the forecast file within 3 and 12 hours of its Last-Modified header, and the scales file within 3 and 12 hours of the time stamp on its current entry.</p>
 
         <h3>Link to the Kp forecasting project</h3>
-        <p>My <a href="../index.html#projects">multi horizon Kp forecasting project</a> trained an LSTM on hourly NASA OMNI2 history. OMNI2 is a cleaned archive, already shifted from the spacecraft to Earth, merged across missions, with gaps marked. This page is the live input such a model would need in production, with everything the archive smooths over: plasma minutes that go missing, a spacecraft label that can change mid stream, ephemerides that lag the data, and propagation that has to be done before the inputs match the training distribution. That model's strongest predictors were ap and the auroral electrojet indices, which are not in these feeds, so a production version would need a source for them or a retrain on solar wind inputs alone.</p>
+        <p>My <a href="https://tanaypratapsingh.github.io/#projects">multi horizon Kp forecasting project</a> trained an LSTM on hourly NASA OMNI2 history. OMNI2 is a cleaned archive, already shifted from the spacecraft to Earth, merged across missions, with gaps marked. This page is the live input such a model would need in production, with everything the archive smooths over: plasma minutes that go missing, a spacecraft label that can change mid stream, ephemerides that lag the data, and propagation that has to be done before the inputs match the training distribution. That model's strongest predictors were ap and the auroral electrojet indices, which are not in these feeds, so a production version would need a source for them or a retrain on solar wind inputs alone.</p>
       </div>
     </div>
   </section>
-  <p class="foot">Data: NOAA Space Weather Prediction Center, services.swpc.noaa.gov (real time solar wind, planetary K index, GOES X-ray flux, OVATION aurora, NOAA scales), public domain. Land outlines: Natural Earth via the world-atlas package. Map projection: d3-geo and topojson-client. Spacecraft labels are shown exactly as the feeds give them. <a href="../index.html">Back to the portfolio</a></p>
+  <p class="foot">Data: NOAA Space Weather Prediction Center, services.swpc.noaa.gov (real time solar wind, planetary K index, GOES X-ray flux, OVATION aurora, NOAA scales), public domain. Land outlines: Natural Earth via the world-atlas package. Map projection: d3-geo and topojson-client. Spacecraft labels are shown exactly as the feeds give them. <a href="https://tanaypratapsingh.github.io/">Back to the portfolio</a></p>
 </main>
 <script type="module" src="sun/app.js"></script>
 </body>
