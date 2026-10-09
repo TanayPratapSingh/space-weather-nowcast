@@ -47,7 +47,7 @@ Then open `http://localhost:8000`. ES modules do not load from `file://`. The au
 node --test tests/*.test.mjs
 ```
 
-20 tests on node 22 or newer, nothing to install. They check dynamic pressure, the Shue standoff, Newell coupling and the ballistic delay against closed forms, flare classes and both G scale rules (the NOAA rule reproduces the labels in NOAA's own file), the subsolar point at the 2026 equinox and solstice, the Sun's distance near perihelion and aphelion, the join of plasma and field for the active spacecraft with gaps and source changes, the OVATION lookups, and the feed freshness thresholds.
+22 tests on node 22 or newer, nothing to install; two of them cover the shared duration formatting. They check dynamic pressure, the Shue standoff, Newell coupling and the ballistic delay against closed forms, flare classes and both G scale rules (the NOAA rule reproduces the labels in NOAA's own file), the subsolar point at the 2026 equinox and solstice, the Sun's distance near perihelion and aphelion, the join of plasma and field for the active spacecraft with gaps and source changes, the OVATION lookups, and the feed freshness thresholds.
 
 ## Layout
 
